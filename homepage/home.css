@@ -1,0 +1,156 @@
+body{
+    margin: 0%;
+}
+/*header css*/
+header{
+    height: 50px;
+    background-color: #3b2632;
+}
+#head{
+    color: white;
+    font-size: 11px;
+    float:left;
+    margin-left: 19px;
+}
+.socialIcon{
+    height: 40px;
+    width: 40px;
+    float: right;
+    margin-right: 9px;
+    margin-top: 3px;
+}
+/*search css*/
+.search{
+    height: 340px;
+    background-image: url("https://i.ibb.co/9nS9G1C/281381.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+#logo{
+    background-color: white;
+    height:90px;
+    width: 90px;
+    border-radius: 50px;
+    margin-left: 565px; 
+    margin-top: 3%;
+    position: absolute; 
+}
+#logo > span{
+    margin-left: 24%;
+    margin-top: 11%;
+    font-size: 56px;
+    color: black;
+    position: absolute;
+}
+#heading{
+    color: white;
+    margin-left: 417px;
+    margin-top: 11%;
+    font-size: 43px;
+    position: absolute;
+}
+#dropdown{
+    height: 45px;
+    width: 36%;
+    margin-top: 229px;
+    margin-left: 385px;
+    position: absolute;
+}
+.options{
+    height: 40px;
+    width: 49%;
+    font-size: 17px;
+    text-align: center;
+}
+/*subsearch css*/
+.subsearch{
+    width: 84%;
+    margin-left: 8%;
+    margin-top: 1%;
+}
+#quicksearch{
+   font-size: 30px;
+   color: black;
+   font-weight: bold;
+   display: block;
+   margin-left: 10px;
+}
+#quicksubsearch{
+    font-size: 20px;
+    color: gray;
+    margin-left: 10px;
+}
+.container{
+    width: 30%;
+    height: 125px;
+    display: inline-block;
+    border: 5px ;
+    margin: 10px;
+    box-shadow: 4px 6px 4px 4px #be603c;
+}
+.containerone > img{
+    width: 40%;
+    height: 125px;
+    display: inline-block;
+    float: left;
+}
+.containertwoheading1{
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 25px;
+    margin-left: 2px;
+    color: black;
+}
+.containertwoheading2{
+    font-size: 20px;
+    color: gray;
+}
+/*footer css*/
+footer{
+    height: 126px;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 3px;
+    background-color: #3b2632;
+    color: white;
+}
+ul{
+    list-style: none;
+}
+.footdiv{
+    width: 33%;
+    float: left;
+    border-left: 2px white solid;
+    background-color: #3b2632;
+    margin: 0px;
+   
+}
+.noBorder{
+    border: none;
+}
+@media screen and (max-width:1200px) {
+    body{
+        background-color: powderblue
+    } 
+}
+@media screen and (max-width:1000px){
+    body{
+        background-color: blue;
+    }
+}
+@media screen and (max-width: 750px){
+    body{
+        background-color: palevioletred
+    }
+}
+@media screen and (max-width: 550px){
+    body{
+        background-color:red;
+    }
+}
+@media screen and (max-width: 450px){
+    body{
+        background-color: pink;
+    }
+}
