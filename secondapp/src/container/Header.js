@@ -5,7 +5,7 @@ class Header extends Component{
         return(
             <Fragment>
             <header>
-                <h1>REACT JS</h1>
+                <h1>Products</h1>
                 <input/>
                 <h3 style={{color:'back'}}>user input</h3>
              <hr/>
