@@ -1,15 +1,35 @@
-import React from 'react';
+import React,{Component} from 'react';
 import Header from './Header';
 import Footer from './Footer';
+import JSON from './data.json';
+import ProductDisplay from './ProductDisplay';
 
-const App = () => {
-    return (
-        <div>
+
+class App extends Component{
+    constructor(props){
+        super(props)
+            this.state={
+                productData:JSON
+            }
+        
+    }
+   
+    render(){
+        return(
+            <div>
             <Header />
-            <h1>Hello reactjs</h1>
-            <h2>This is App.js file</h2>
-            <Footer />
+            <ProductDisplay products={this.state.productData}/>
+            <Footer year='2023' month='May' /> 
+            {/* user defined attributes or properties can be passed from nested component from parent to child and done binding */}
         </div>
-    )
+
+        )
+    }
 }
+// const App = () => {
+//     console.log('>>',JSON)
+//     return (
+        
+//     )
+// }
 export default App;
