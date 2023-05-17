@@ -17,7 +17,7 @@ class App extends Component{
     render(){
         return(
             <div>
-            <Header />
+            <Header userInput={(data)=>{console.log("in parent",data)}} /> {/*user imput is a property*/}
             <ProductDisplay products={this.state.productData}/>
             <Footer year='2023' month='May' /> 
             {/* user defined attributes or properties can be passed from nested component from parent to child and done binding */}
@@ -26,10 +26,4 @@ class App extends Component{
         )
     }
 }
-// const App = () => {
-//     console.log('>>',JSON)
-//     return (
-        
-//     )
-// }
 export default App;
