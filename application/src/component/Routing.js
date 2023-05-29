@@ -3,7 +3,7 @@ import { BrowserRouter, Route } from "react-router-dom";
 import Header from "./Header";
 import Home from "./Home";
 import Footer from "./Footer";
-import Post from "./Post";
+import Post from "./npm";
 import Profile from "./Profile";
 import PostDetail from "./PostDetails";
 
