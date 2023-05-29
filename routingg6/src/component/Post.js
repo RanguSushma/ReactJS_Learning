@@ -7,7 +7,7 @@ const Post = () => {
                 Post Page
             </div>
             <div className="card-body">
-                <h5 className="card-title">Post Pageeee </h5>
+                <h5 className="card-title">Post Page </h5>
                 <p calssName="card-text">Post supporting text below as a natural lead-in to additional content.</p>
                 <h3>Java</h3>
                 <Link to='/post/java?page=1' className="btn btn-primary">Deatils</Link>
