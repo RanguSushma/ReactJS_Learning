@@ -1,0 +1,47 @@
+footer{
+    height: 126px;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 3px;
+    background-color: #3b2632;
+    color: white;
+}
+ul{
+    list-style: none;
+}
+.footdiv{
+    width: 33%;
+    float: left;
+    border-left: 2px white solid;
+    background-color: #3b2632;
+    margin: 0px;
+   
+}
+.noBorder{
+    border: none;
+}
+@media screen and (max-width:1200px) {
+    body{
+        background-color: powderblue
+    } 
+}
+@media screen and (max-width:1000px){
+    body{
+        background-color: blue;
+    }
+}
+@media screen and (max-width: 750px){
+    body{
+        background-color: palevioletred
+    }
+}
+@media screen and (max-width: 550px){
+    body{
+        background-color:red;
+    }
+}
+@media screen and (max-width: 450px){
+    body{
+        background-color: pink;
+    }
+}

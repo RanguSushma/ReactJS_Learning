@@ -1,0 +1,25 @@
+body{
+    margin: 0%;
+    background-color: antiquewhite;
+   
+}
+/*header css*/
+header{
+    height: 60px;
+    background-color: #3b2632;
+}
+#head{
+    color:white;
+    font-size:17px;
+    float:left;
+    margin-top:1%;
+    margin-left:2%;
+
+}
+.socialIcon{
+    height: 40px;
+    width: 40px;
+    float: right;
+    margin-right: 9px;
+    margin-top: 3px;
+}
