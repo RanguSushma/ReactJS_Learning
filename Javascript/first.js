@@ -36,6 +36,16 @@ const neVersionn=a=> a+60;
 console.log(neVersionn(20));
 // we dont need to use return, that curly braces and function braces in ES6
 80
+// --------------------------------------------------
+// String Literals
+// ES5
+// var a=22
+// var b="my age is" +a;
+// "my age is 22"
+// ES6
+// var a=23
+// var b=`my age is ${a}` backtick
+// "my age is 22"
 
 // --------------------------------------------------------
 

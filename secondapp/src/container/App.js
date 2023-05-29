@@ -6,8 +6,10 @@ import ProductDisplay from './ProductDisplay';
 
 
 class App extends Component{
-    constructor(props){
+    constructor(props){   
+        // constructor is used to initialize new version of variables and that initialized variable that start with this key word
         super(props)
+        // must call super constructor in derived class before accessing this(in parent class) or return from derived class ES6
             this.state={
                 productData:JSON,
                 filterData:JSON
