@@ -34,6 +34,24 @@ newwVersionn(20);
 
 const neVersionn=a=> a+60;
 console.log(neVersionn(20));
+// ----------------------
+
+// arr=[1,2,3,4,2]
+// arr.splice(2,1)
+// arr
+// (4) [1, 2, 4, 2]
+// --------------------------
+// arr=[1,2,3,4,2]
+// arr.indexOf(4)
+// 3
+// --------------------------
+// var a=[11,22,33,44,33]
+// a.splice(a.indexOf(33),1)
+
+// [33]
+// a
+// (4) [11, 22, 44, 33]
+// --------------------------
 // we dont need to use return, that curly braces and function braces in ES6
 80
 // --------------------------------------------------
