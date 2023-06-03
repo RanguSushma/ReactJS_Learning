@@ -1,21 +1,23 @@
 .main{
     display: inline-block;
-    margin-left:5%
+    margin : 10px 45px 25px 45px;
 }
 
-.tileImage{
+.titleImage{
     width:48%;
     float: left;
+    
 }
 
-.tileContent{
+.titleContent{
     width:50%;
     margin-left: 2%;
     float: left;
+    margin-top: 7px;
 }
 
 .imageClass > img{
-    height: 600px;
+    height: 520px;
     width:95%;
     margin-left: 3%;
     margin-top: 3%;
@@ -29,11 +31,12 @@
 
 .icons{
     display: inline-block;
-    margin-left:2%
+    margin-left:2%;
+    size: 10px
 }
 .icons >img{
-    width: 120px;
-    height:120px;
+    width: 90px;
+    height:90px;
 }
 
 #stock{
@@ -48,4 +51,8 @@
 }
 #Atoc{
     background-color:green
+}
+
+#menu{
+    margin-top: 26px;
 }

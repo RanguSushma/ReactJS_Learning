@@ -33,3 +33,4 @@ class QuickSearch extends Component {
 }
 
 export default QuickSearch
+

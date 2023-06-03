@@ -20,25 +20,27 @@ const ListingDisplay = (props) => {
                                     <div className="city_name">{item.address}</div>
                                     <div className="city_name">{item.rating_text}</div>
                                     <div className="city_name">Rs {item.cost}</div>
+                                    
                                     <div className="labelDiv">
-                                        <span className='btn btn-primary'>
+                                        <span className='label label-primary'>
                                             {item.mealTypes[0].mealtype_name}
                                         </span> &nbsp;&nbsp;
-                                        <span className="btn btn-success">
+                                        <span className="label label-success">
                                             {item.mealTypes[1].mealtype_name}
                                         </span>
                                     </div>
+
                                     <div className="labelDiv">
-                                        <span className="btn btn-warning">
-                                            {item.mealTypes[0].mealtype_name}
+                                        <span className="label label-warning">
+                                            {item.cuisines[0].cuisine_name}
                                         </span>&nbsp;&nbsp;
-                                        <span className="btn btn-info">
-                                            {item.mealTypes[1].mealtype_name}
+                                        <span className="label label-info">
+                                            {item.cuisines[1].cuisine_name}
                                         </span>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
+                            </div>  
+                        </div>                 
                     )
                 })
             } else {

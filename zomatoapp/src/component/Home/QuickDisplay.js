@@ -10,7 +10,7 @@ const QuickDisplay = (props) => {
                     <Link to={`/listing/${item.mealtype_id}`} key={item.mealtype_id}>
                         {/*use backtick for api url binding */}
                         <div className="container">
-                            <div className="containerone"> <img src={item.meal_image} /></div>
+                            <div className="containerone"> <img src={item.meal_image} alt={item.mealtype} /></div>
                             <div className="conatinertwo">
                                 <div className="containertwoheading1">{item.mealtype}</div>
                                 <div className="containertwoheading2">{item.content}</div>
@@ -30,3 +30,4 @@ const QuickDisplay = (props) => {
 }
 
 export default QuickDisplay
+
