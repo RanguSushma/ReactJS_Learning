@@ -1,0 +1,45 @@
+.subsearch{
+    width: 84%;
+    margin-left: 8%;
+    margin-top: 1%;
+}
+#quicksearch{
+   font-size: 30px;
+   color: black;
+   font-weight: bold;
+   display: block;
+   margin-left: 10px;
+}
+#quicksubsearch{
+    font-size: 20px;
+    color: gray;
+    margin-left: 10px;
+}
+.container{
+    width: 30%;
+    height: 125px;
+    display: inline-block;
+    border: 5px ;
+    margin: 10px;
+    padding: 0px;
+    box-shadow: 4px 6px 4px 4px #be603c;
+}
+.containerone > img{
+    width: 40%;
+    height: 125px;
+    display: inline-block;
+    float: left;
+}
+.containertwoheading1{
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-left: 2px;
+    color: black;
+}
+.containertwoheading2{
+    font-size: 20px;
+    color: gray;
+}
+
+

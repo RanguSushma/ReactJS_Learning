@@ -1,6 +1,7 @@
 import React,{Component} from "react";
 import Axios from "axios";
-import DisplayOrder from "./displayOrder"
+import DisplayOrder from "./displayOrder";
+import Header from "../Header"
 
 const url="http://localhost:3500/orders";
 
@@ -13,7 +14,10 @@ class ViewOrder extends Component{
     }
     render(){
         return(
+            <>
+            <Header/>
             <DisplayOrder orderData={this.state.orders}/>
+            </>
         )
     }
 

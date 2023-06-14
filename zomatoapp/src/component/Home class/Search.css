@@ -1,0 +1,44 @@
+/*search css*/
+.search{
+    height: 340px;
+    background-image: url("https://i.ibb.co/9nS9G1C/281381.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+#logo{
+    background-color: white;
+    height:90px;
+    width: 90px;
+    border-radius: 50px;
+    margin-left: 565px; 
+    margin-top: 3%;
+    position: absolute; 
+}
+#logo > span{
+    margin-left: 24%;
+    margin-top: 11%;
+    font-size: 56px;
+    color: black;
+    position: absolute;
+}
+#heading{
+    color: white;
+    margin-left: 417px;
+    margin-top: 11%;
+    font-size: 43px;
+    position: absolute;
+}
+#dropdown{
+    height: 45px;
+    width: 36%;
+    margin-top: 229px;
+    margin-left: 385px;
+    position: absolute;
+}
+.options{
+    height: 40px;
+    width: 49%;
+    font-size: 13px;
+    text-align: center;
+}

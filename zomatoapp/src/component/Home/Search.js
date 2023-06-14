@@ -1,45 +1,43 @@
-import React, { Component } from "react";
+import React, { useState,useEffect } from "react";
 import "./Search.css";
 
 const base_url = "http://3.17.216.66:4000";
-class Search extends Component {
-    constructor() {
-        super()
-        console.log("inside constructor")
-        this.state = {
-            location: '',
-            restaurents: ''
-        }
-    }
 
-    renderCity = (data) => {
-        //render is used to dipaly the data
-        if (data) {
-            //from whole data we need to select city so we used map to get into item wise
-            return data.map((item) => {
-                //when we select city from all items {item.state} we will see that item.state_id(value) and item._id(key) of that state
-                //when there is huge data we use map into items through that we get particular info. to differentiate particular info we use key to make uniquee
-                return (
-                    <option value={item.state_id} key={item._id}>{item.state}</option>
-                )
-            })
-        }
-    }
+function Search(){
+    const [location,setLocation]=useState()
+    const [restaurant,setRestaurant]=useState()
 
-    handlerCity = (event) => {
+    useEffect(()=>{
+        fetch(`${base_url}/location`, { method: 'GET' })
+        .then((res) => res.json()) //response will pass to json method
+        .then((data)=>{
+            
+            setLocation(data)})
+    })
+
+    const handleCity=(event)=>{
         console.log(event.target.value)
         //here target.value is equal to item.state_id in above option tag  
         let stateId = event.target.value; //this target.value which means state_id will got to the option tage in above and check for the and check for the tAargetvalue in option tag and then city got selected 
         fetch(`${base_url}/restaurant?stateId=${stateId}`, { method: 'GET' })
             .then((res) => res.json())
             .then((data) => {
-                console.log(data)
-                this.setState({ restaurents: data })
-                //here setState we have key:retaurents and value:data where restaurent names are given dynamically
+                console.log(data);
+                setRestaurant(data)
             })
+
     }
 
-    renderRestaurent = (data) => {
+    const renderCity=(data)=>{
+        if(data){
+            return data.map((item)=>{
+                return (
+                    <option value={item.state_id} key={item._id}>{item.state}</option>
+                )
+            })
+        }
+    }
+    const renderRestaurent=(data)=>{
         if (data) {
             return data.map((item) => {
                 return (
@@ -49,47 +47,28 @@ class Search extends Component {
             })
         }
     }
+    return(
+        <div className="search">
+        <div id="logo">
+            <span>D!</span>
+        </div>
+        <div id="heading">
+            Search Place Near You
+        </div>
+        <div id="dropdown">
+            <select name="city" className="options" onChange={handleCity}>
+                <option>--Select City--</option>
+                {renderCity(location)}
+                 { /*this.state.location here location has four objects from get api data*/ }
+            </select>
+            <select name="resturent" className="options">
+                <option>--Select Restaurent--</option>
+                {renderRestaurent(restaurant)}
+            </select>
+        </div>
+    </div>
+        
+    )
 
-    render() {
-        console.log("inside render")
-        return (
-            <div className="search">
-                <div id="logo">
-                    <span>D!</span>
-                </div>
-                <div id="heading">
-                    Search Place Near You
-                </div>
-                <div id="dropdown">
-                    <select name="city" className="options" onChange={this.handlerCity}>
-                        <option>--Select City--</option>
-                        {this.renderCity(this.state.location)}
-                         { /*this.state.location here location has four objects from get api data*/ }
-                    </select>
-                    <select name="resturent" className="options">
-                        <option>--Select Restaurent--</option>
-                        {this.renderRestaurent(this.state.restaurents)}
-                    </select>
-                </div>
-            </div>
-        )
-    }
-
-    //when api calling is done/ Page load happen then we use componentDidMount
-    componentDidMount() {
-        console.log("inside componentDidMount")
-        fetch(`${base_url}/location`, { method: 'GET' })
-            //fetch method in js will return the promise
-            .then((res) => res.json()) //res means response
-            //return data
-            .then((data) => {
-                console.log(data)
-                this.setState({ location: data })
-            })
-            .catch((err) => {
-                console.log(err)
-            })
-    }
 }
-
 export default Search

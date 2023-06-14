@@ -7,6 +7,8 @@ import Listing from "./Listing/listingapi";
 import Details from "./Details/details";
 import PlaceOrder from "./Orders/placeOrder";
 import ViewOrder from "./Orders/viewOrder";
+import Login from "./login/login";
+import Register from "./login/register"
 
 const Routing = () => {
     return(
@@ -18,6 +20,8 @@ const Routing = () => {
             <Route path="/details" component={Details}/>
             <Route path="/placeOrder/:restName" component={PlaceOrder}/>
             <Route path="/veiwBooking" component={ViewOrder}/>
+            <Route path="/login" component={Login}/>
+            <Route path="/register" component={Register}/>
             <Footer/>
         
         </BrowserRouter>
